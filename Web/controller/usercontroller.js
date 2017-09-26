@@ -1,4 +1,6 @@
-app.controller('UserController'.function($scope,UserService,$location)
+/**
+ * 
+ */app.controller('UserController'.function($scope,UserService,$location)
 		{
 
 	$scope.registerUser=function(){
@@ -16,4 +18,4 @@ app.controller('UserController'.function($scope,UserService,$location)
 		
 		}
 		
-}) 
+})

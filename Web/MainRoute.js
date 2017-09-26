@@ -1,8 +1,13 @@
-var app = angular.module("app", ["ngRoute"]);
+var myApp=angular.module("myApp",['ngRoute'])
 
-app.config(['$routeProvider', function ($routeProvider) {
-        $routeProvider.when('/Home', {templateUrl: 'Home.html'});
-        $routeProvider.when('/Login', {templateUrl: 'Login.html', controller: 'loginCtrl'});
-        $routeProvider.when('/Register', {templateUrl: 'Register.html', controller: 'registerCtrl'});
-        $routeProvider.otherwise({redirectTo: '/home'});
-    }]);
+myApp.config(function($routeProvider)
+		{
+	     $routeProvider.when("/",{templateUrl:"User/Login.html"})
+	                   .when("/Login",{templateUrl:"User/Login.html",control})
+		               .when("/Register",{templateUrl:"User/Register.html",})
+		});
+
+myApp.controller("UserController",function($scope)
+		{
+        	$scope.message="LoginPage";
+		});s
